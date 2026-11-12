@@ -3,7 +3,9 @@ name: Release
 # Zips each plugin, for Claude and for ChatGPT and Codex, and attaches the zips to the GitHub release
 # that triggered this run. The ae5vg.com Downloads page reads the asset list
 # from the releases/latest API. In Claude: Customize, Plugins, Add, Upload plugin.
-# Fires when you publish a GitHub Release (e.g. `gh release create v1.0.1`).
+# Fires when you publish a GitHub Release:
+#   gh release create vX.Y.Z --title vX.Y.Z --notes-file RELEASE-NOTES.md
+# RELEASE-NOTES.md holds the install steps; add a line on what changed before releasing.
 
 on:
   release:
