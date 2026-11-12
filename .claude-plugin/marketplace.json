@@ -1,11 +1,16 @@
 {
   "name": "ae5vg",
-  "owner": { "name": "Stefan Brunner (AE5VG)", "url": "https://ae5vg.com" },
-  "metadata": { "description": "Claude plugins from AE5VG: amateur radio station control and serial consoles." },
+  "owner": {
+    "name": "Stefan Brunner (AE5VG)",
+    "url": "https://ae5vg.com"
+  },
+  "metadata": {
+    "description": "Claude plugins from AE5VG: amateur radio station control and serial consoles."
+  },
   "plugins": [
     {
-      "name": "ae5vg-amateur-radio",
-      "source": "./plugins/ae5vg-amateur-radio",
+      "name": "amateur-radio",
+      "source": "./plugins/amateur-radio",
       "description": "Operate an amateur radio station with Claude: fldigi for PSK, RTTY and other digital modes, WSJT-X for FT8 and FT4, and N3FJP for logging."
     },
     {

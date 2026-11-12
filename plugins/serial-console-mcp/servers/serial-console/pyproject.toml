@@ -1,0 +1,10 @@
+# Installs the serial-console MCP server at a fixed release commit. uv.lock records a
+# hash for every file installed, so the plugin always runs the reviewed code.
+[project]
+name = "serial-console-server"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = ["serial-console-mcp[screen] @ git+https://github.com/sbrunner-atx/serial-console-mcp@d74321137a4f67bfc49f93bb89a013b74f686b5b"]
+
+[tool.uv]
+package = false

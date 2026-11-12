@@ -1,0 +1,10 @@
+# Installs the fldigi MCP server at a fixed release commit. uv.lock records a
+# hash for every file installed, so the plugin always runs the reviewed code.
+[project]
+name = "fldigi-server"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = ["fldigi-mcp[hunt] @ git+https://github.com/sbrunner-atx/fldigi-mcp@5979db4f94ce1c2c3392e257eed9f07df653dd2d"]
+
+[tool.uv]
+package = false

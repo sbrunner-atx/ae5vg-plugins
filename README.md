@@ -4,14 +4,14 @@
 
 Two Claude plugins:
 
-- [**Amateur Radio**](plugins/ae5vg-amateur-radio): operate a station with fldigi, WSJT-X and N3FJP
+- [**Amateur Radio**](plugins/amateur-radio): operate a station with fldigi, WSJT-X and N3FJP
 - [**Serial Console**](plugins/serial-console-mcp): work any serial console, from Juniper and Cisco gear to CAT radios and rotators
 
 To add them in Claude Code:
 
 ```
 /plugin marketplace add sbrunner-atx/ae5vg-plugins
-/plugin install ae5vg-amateur-radio@ae5vg
+/plugin install amateur-radio@ae5vg
 /plugin install serial-console-mcp@ae5vg
 ```
 

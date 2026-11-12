@@ -1,10 +1,12 @@
 {
   "mcpServers": {
     "fldigi": {
-      "command": "uvx",
+      "command": "uv",
       "args": [
-        "--from",
-        "fldigi-mcp[hunt] @ git+https://github.com/sbrunner-atx/fldigi-mcp@5979db4f94ce1c2c3392e257eed9f07df653dd2d",
+        "run",
+        "--locked",
+        "--directory",
+        "${CLAUDE_PLUGIN_ROOT}/servers/fldigi",
         "fldigi-mcp"
       ],
       "env": {
