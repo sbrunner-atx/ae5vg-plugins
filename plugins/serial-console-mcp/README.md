@@ -19,7 +19,7 @@ You need [uv](https://docs.astral.sh/uv/) installed. Works in Claude Code and in
 
 ## What it runs and what it sends
 
-The plugin starts one local MCP server with `uvx`, which downloads the pinned package `serial-console-mcp` from PyPI. The server talks only to the serial ports on your computer that you ask it to open. It sends nothing over the network and collects no data.
+The plugin starts one local MCP server with `uvx`, which installs `serial-console-mcp` from its GitHub repository at a fixed release commit, and its dependencies from PyPI. The server talks only to the serial ports on your computer that you ask it to open. It sends nothing over the network and collects no data.
 
 ## Support
 

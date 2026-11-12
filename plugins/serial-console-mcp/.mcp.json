@@ -2,7 +2,11 @@
   "mcpServers": {
     "serial-console": {
       "command": "uvx",
-      "args": ["--from", "serial-console-mcp[screen]==0.3.3", "serial-console-mcp"],
+      "args": [
+        "--from",
+        "serial-console-mcp[screen] @ git+https://github.com/sbrunner-atx/serial-console-mcp@d74321137a4f67bfc49f93bb89a013b74f686b5b",
+        "serial-console-mcp"
+      ],
       "env": {
         "SERIAL_CONSOLE_READ_ONLY": "${user_config.read_only}",
         "SERIAL_CONSOLE_IDLE_MINUTES": "${user_config.idle_minutes}"

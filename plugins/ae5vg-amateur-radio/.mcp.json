@@ -2,7 +2,11 @@
   "mcpServers": {
     "fldigi": {
       "command": "uvx",
-      "args": ["--from", "fldigi-mcp[hunt]==0.4.1", "fldigi-mcp"],
+      "args": [
+        "--from",
+        "fldigi-mcp[hunt] @ git+https://github.com/sbrunner-atx/fldigi-mcp@5979db4f94ce1c2c3392e257eed9f07df653dd2d",
+        "fldigi-mcp"
+      ],
       "env": {
         "FLDIGI_CALLSIGN": "${user_config.callsign}",
         "FLDIGI_HOST": "${user_config.fldigi_host}",
@@ -14,7 +18,11 @@
     },
     "wsjtx": {
       "command": "uvx",
-      "args": ["wsjtx-mcp==0.1.4"],
+      "args": [
+        "--from",
+        "git+https://github.com/sbrunner-atx/wsjtx-mcp@c5d75baafcbd563ce9d80c02482296fea74127a3",
+        "wsjtx-mcp"
+      ],
       "env": {
         "WSJTX_CALLSIGN": "${user_config.callsign}",
         "WSJTX_HOST": "${user_config.wsjtx_host}",
@@ -24,7 +32,11 @@
     },
     "n3fjp": {
       "command": "uvx",
-      "args": ["n3fjp-mcp==0.3.3"],
+      "args": [
+        "--from",
+        "git+https://github.com/sbrunner-atx/n3fjp-mcp@a41ee91cd2942f28fefe3d0f253679df1ec36ee7",
+        "n3fjp-mcp"
+      ],
       "env": {
         "N3FJP_HOST": "${user_config.n3fjp_host}",
         "N3FJP_PORT": "${user_config.n3fjp_port}",

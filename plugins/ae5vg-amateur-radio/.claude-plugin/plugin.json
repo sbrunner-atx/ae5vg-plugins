@@ -58,11 +58,6 @@
       "type": "string",
       "title": "IARU Region",
       "description": "Your IARU region for Band Guidance: 1 (Europe, Africa), 2 (Americas), 3 (Asia-Pacific).",
-      "options": [
-        "1",
-        "2",
-        "3"
-      ],
       "default": "2"
     },
     "audio_device": {

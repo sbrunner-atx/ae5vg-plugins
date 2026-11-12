@@ -22,7 +22,7 @@ Works in Claude Code and in Cowork on your own computer. In plain chat the skill
 
 ## What it runs and what it sends
 
-The plugin starts three local MCP servers with `uvx`, which downloads the pinned packages `fldigi-mcp`, `wsjtx-mcp` and `n3fjp-mcp` from PyPI. The servers talk only to fldigi (XML-RPC, port 7362), WSJT-X (UDP, port 2237) and N3FJP (TCP, port 1100) at the addresses in the settings, 127.0.0.1 by default. They send nothing anywhere else and collect no data.
+The plugin starts three local MCP servers with `uvx`, which installs `fldigi-mcp`, `wsjtx-mcp` and `n3fjp-mcp` from their GitHub repositories at a fixed release commit, and their dependencies from PyPI. The servers talk only to fldigi (XML-RPC, port 7362), WSJT-X (UDP, port 2237) and N3FJP (TCP, port 1100) at the addresses in the settings, 127.0.0.1 by default. They send nothing anywhere else and collect no data.
 
 ## Support
 
