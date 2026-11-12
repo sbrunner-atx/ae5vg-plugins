@@ -111,7 +111,7 @@ asserted with `set_lines` unless the user asked for that explicitly.
 
 ## Safety
 
-The server sends exactly what you ask. Claude Desktop shows each call for
+The server sends exactly what you ask. The app shows each call for
 approval; the user is the operator. Prefer read-only commands first (`show`,
 `ID;`, CI-V `03`). Commands that change configuration, reboot, or transmit
 need the user's explicit intent in the conversation. If `SERIAL_CONSOLE_READ_ONLY`

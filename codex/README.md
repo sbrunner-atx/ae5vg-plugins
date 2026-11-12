@@ -8,10 +8,10 @@ Add the marketplace and install from the Plugins Directory in the ChatGPT deskto
 codex plugin marketplace add sbrunner-atx/ae5vg-plugins
 ```
 
-Without GitHub: download `ae5vg-marketplace.zip` from the latest release or from https://ae5vg.com/downloads.html#plugins, unzip it, and add the folder:
+Without GitHub: download `amateur-radio-chatgpt-plugin.zip` or `serial-console-chatgpt-plugin.zip` from the latest release or from https://ae5vg.com/downloads.html#plugins, unzip it into your home folder, and add the folder:
 
 ```
-codex plugin marketplace add ~/Downloads/ae5vg-marketplace
+codex plugin marketplace add ~/amateur-radio-chatgpt-plugin
 ```
 
 In Codex the servers start with their default settings: fldigi, WSJT-X and N3FJP on 127.0.0.1 at their standard ports. No callsign is set, so the radio servers stay receive-only.

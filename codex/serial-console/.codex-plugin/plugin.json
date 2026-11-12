@@ -1,7 +1,7 @@
 {
   "name": "serial-console",
-  "version": "1.0.2",
-  "description": "By Stefan Brunner. Let Claude work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.",
+  "version": "1.0.3",
+  "description": "By Stefan Brunner. Let ChatGPT work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.",
   "author": {
     "name": "Stefan Brunner",
     "url": "https://ae5vg.com/products/serial-console-mcp.html"
@@ -36,7 +36,7 @@
   "interface": {
     "displayName": "Serial Console",
     "shortDescription": "Work any device's serial console",
-    "longDescription": "By Stefan Brunner. Let Claude work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.\n\nThe server runs on your own computer and opens its serial ports, so the plugin needs the ChatGPT desktop app.",
+    "longDescription": "By Stefan Brunner. Let ChatGPT work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.\n\nThe server runs on your own computer and opens its serial ports, so the plugin needs the ChatGPT desktop app.",
     "developerName": "Stefan Brunner",
     "category": "Productivity",
     "capabilities": [

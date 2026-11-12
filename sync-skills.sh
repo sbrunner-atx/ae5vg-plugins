@@ -9,3 +9,6 @@ sed -i "s|see docs/N3FJP-API.md gotchas|see the gotchas in https://github.com/sb
 cp -R plugins/amateur-radio/skills/. codex/amateur-radio/skills/
 cp -R plugins/serial-console-mcp/skills/. codex/serial-console/skills/
 echo "Skills copied. Check the diff, raise the plugin version, and commit."
+# The ChatGPT copies must not name Claude.
+sed -i.bak "s/Claude Desktop shows each call for/The app shows each call for/" codex/serial-console/skills/serial-console/SKILL.md && rm -f codex/serial-console/skills/serial-console/SKILL.md.bak
+if grep -rIl -i claude codex/amateur-radio codex/serial-console; then echo "Claude is named in the ChatGPT plugins above: fix before release."; exit 1; fi

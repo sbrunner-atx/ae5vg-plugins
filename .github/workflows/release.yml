@@ -1,6 +1,6 @@
 name: Release
 
-# Zips each Claude plugin folder and attaches the zips to the GitHub release
+# Zips each plugin, for Claude and for ChatGPT and Codex, and attaches the zips to the GitHub release
 # that triggered this run. The ae5vg.com Downloads page reads the asset list
 # from the releases/latest API. In Claude: Customize, Plugins, Add, Upload plugin.
 # Fires when you publish a GitHub Release (e.g. `gh release create v1.0.1`).
@@ -16,16 +16,20 @@ jobs:
       contents: write   # upload release assets
     steps:
       - uses: actions/checkout@v4
+      - name: Check that the ChatGPT plugins do not name Claude
+        run: |
+          if grep -rIn -i claude codex/amateur-radio codex/serial-console; then
+            echo "The ChatGPT plugins must not name Claude."; exit 1
+          fi
       - name: Zip the plugins
         run: |
           mkdir dist
           (cd plugins && zip -qr ../dist/amateur-radio-claude-plugin.zip amateur-radio -x '*.DS_Store')
           (cd plugins && zip -qr ../dist/serial-console-claude-plugin.zip serial-console-mcp -x '*.DS_Store')
-          # The whole marketplace, for Claude Code and for ChatGPT and Codex, which install
-          # only from a marketplace folder. Unzip it, then add the folder as a marketplace.
-          mkdir -p stage/ae5vg-marketplace
-          cp -R .agents .claude-plugin plugins codex README.md LICENSE stage/ae5vg-marketplace/
-          (cd stage && zip -qr ../dist/ae5vg-marketplace.zip ae5vg-marketplace -x '*.DS_Store')
+          # ChatGPT and Codex install only from a marketplace folder, so each ChatGPT zip
+          # is a one-plugin marketplace: unzip it, then add the folder as a marketplace.
+          python3 scripts/build_chatgpt_zip.py amateur-radio "Amateur Radio"
+          python3 scripts/build_chatgpt_zip.py serial-console "Serial Console"
           ls -l dist
       - name: Attach to the release
         env:

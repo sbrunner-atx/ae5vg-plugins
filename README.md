@@ -23,6 +23,6 @@ In Codex:
 codex plugin marketplace add sbrunner-atx/ae5vg-plugins
 ```
 
-Then install from the Plugins Directory in the ChatGPT desktop app. Without GitHub, download `ae5vg-marketplace.zip` from the latest release, unzip it and add the folder: `codex plugin marketplace add ~/Downloads/ae5vg-marketplace`. The same folder works in Claude Code with `/plugin marketplace add`. The Codex versions live in `codex/`; see [codex/README.md](codex/README.md).
+Then install from the Plugins Directory in the ChatGPT desktop app. Without GitHub, download `amateur-radio-chatgpt-plugin.zip` or `serial-console-chatgpt-plugin.zip` from the latest release, unzip it into your home folder and add that folder, for example `codex plugin marketplace add ~/amateur-radio-chatgpt-plugin`. The Codex versions live in `codex/`; see [codex/README.md](codex/README.md).
 
 The skills are copied from the server repositories. `sync-skills.sh` copies them again after a change there.

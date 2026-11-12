@@ -1,7 +1,7 @@
 {
   "name": "amateur-radio",
-  "version": "1.0.1",
-  "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
+  "version": "1.0.2",
+  "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with ChatGPT: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
   "author": {
     "name": "Stefan Brunner (AE5VG)",
     "url": "https://ae5vg.com"
@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "Amateur Radio",
     "shortDescription": "Operate your ham radio station",
-    "longDescription": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.\n\nThe servers run on your own computer, next to fldigi, WSJT-X and N3FJP, so the plugin needs the ChatGPT desktop app. In ChatGPT no callsign is set, so the station stays receive-only.",
+    "longDescription": "By Stefan Brunner, AE5VG. Operate an amateur radio station with ChatGPT: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.\n\nThe servers run on your own computer, next to fldigi, WSJT-X and N3FJP, so the plugin needs the ChatGPT desktop app. In ChatGPT no callsign is set, so the station stays receive-only.",
     "developerName": "Stefan Brunner (AE5VG)",
     "category": "Productivity",
     "capabilities": [
