@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "fldigi": {
+      "command": "uvx",
+      "args": ["--from", "fldigi-mcp[hunt]==0.4.1", "fldigi-mcp"],
+      "env": {
+        "FLDIGI_CALLSIGN": "${user_config.callsign}",
+        "FLDIGI_HOST": "${user_config.fldigi_host}",
+        "FLDIGI_PORT": "${user_config.fldigi_port}",
+        "FLDIGI_BAND_GUIDANCE": "${user_config.band_guidance}",
+        "FLDIGI_REGION": "${user_config.region}",
+        "FLDIGI_AUDIO_DEVICE": "${user_config.audio_device}"
+      }
+    },
+    "wsjtx": {
+      "command": "uvx",
+      "args": ["wsjtx-mcp==0.1.4"],
+      "env": {
+        "WSJTX_CALLSIGN": "${user_config.callsign}",
+        "WSJTX_HOST": "${user_config.wsjtx_host}",
+        "WSJTX_PORT": "${user_config.wsjtx_port}",
+        "WSJTX_MULTICAST": "${user_config.wsjtx_multicast}"
+      }
+    },
+    "n3fjp": {
+      "command": "uvx",
+      "args": ["n3fjp-mcp==0.3.3"],
+      "env": {
+        "N3FJP_HOST": "${user_config.n3fjp_host}",
+        "N3FJP_PORT": "${user_config.n3fjp_port}",
+        "N3FJP_ALLOW_DB_WIPE": "${user_config.allow_db_wipe}"
+      }
+    }
+  }
+}

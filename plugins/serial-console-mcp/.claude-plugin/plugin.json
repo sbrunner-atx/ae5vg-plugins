@@ -1,0 +1,49 @@
+{
+  "name": "serial-console-mcp",
+  "displayName": "Serial Console",
+  "version": "1.0.0",
+  "description": "By Stefan Brunner, AE5VG. Let Claude work the serial console of the equipment that runs networks and radio stations: Juniper and Cisco routers and switches, Icom CI-V and Kenwood, Yaesu and Elecraft CAT transceivers, GS-232 antenna rotators, and any other serial device in raw, ANSI or VT100 mode.",
+  "author": {
+    "name": "Stefan Brunner (AE5VG)",
+    "url": "https://ae5vg.com"
+  },
+  "homepage": "https://ae5vg.com/products/serial-console-mcp.html",
+  "repository": "https://github.com/sbrunner-atx/ae5vg-plugins",
+  "license": "MIT",
+  "keywords": [
+    "serial",
+    "console",
+    "rs-232",
+    "juniper",
+    "junos",
+    "cisco",
+    "ios",
+    "network-automation",
+    "telecom",
+    "cat",
+    "ci-v",
+    "rotator",
+    "vt100",
+    "iot",
+    "stefan-brunner",
+    "ae5vg"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://ae5vg.com/user-guide/serial-console-field-guide.html",
+  "supportUrl": "https://github.com/sbrunner-atx/serial-console-mcp/issues",
+  "userConfig": {
+    "read_only": {
+      "type": "boolean",
+      "title": "Read-only mode",
+      "description": "Refuse anything but read-style commands (show, display, get, CAT and CI-V reads) and refuse DTR and RTS changes.",
+      "default": false
+    },
+    "idle_minutes": {
+      "type": "number",
+      "title": "Close an idle port after (minutes)",
+      "description": "Free a port nobody has used for this long, so a forgotten connection stops blocking other programs. 0 disables it.",
+      "default": 0,
+      "min": 0
+    }
+  }
+}

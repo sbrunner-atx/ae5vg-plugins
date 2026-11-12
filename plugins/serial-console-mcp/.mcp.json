@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "serial-console": {
+      "command": "uvx",
+      "args": ["--from", "serial-console-mcp[screen]==0.3.3", "serial-console-mcp"],
+      "env": {
+        "SERIAL_CONSOLE_READ_ONLY": "${user_config.read_only}",
+        "SERIAL_CONSOLE_IDLE_MINUTES": "${user_config.idle_minutes}"
+      }
+    }
+  }
+}

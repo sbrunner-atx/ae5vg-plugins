@@ -1,0 +1,111 @@
+{
+  "name": "ae5vg-amateur-radio",
+  "displayName": "Amateur Radio",
+  "version": "1.0.0",
+  "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
+  "author": {
+    "name": "Stefan Brunner (AE5VG)",
+    "url": "https://ae5vg.com"
+  },
+  "homepage": "https://ae5vg.com/products/",
+  "repository": "https://github.com/sbrunner-atx/ae5vg-plugins",
+  "license": "MIT",
+  "keywords": [
+    "amateur-radio",
+    "ham-radio",
+    "fldigi",
+    "wsjtx",
+    "ft8",
+    "ft4",
+    "psk31",
+    "rtty",
+    "n3fjp",
+    "logging",
+    "contest",
+    "field-day",
+    "stefan-brunner",
+    "ae5vg"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://ae5vg.com/user-guide/operating-field-guide.html",
+  "supportUrl": "https://github.com/sbrunner-atx/ae5vg-plugins/issues",
+  "userConfig": {
+    "callsign": {
+      "type": "string",
+      "title": "Callsign",
+      "description": "Your licensed callsign. It is the transmit gate for fldigi and WSJT-X: leave it blank to keep the station receive-only.",
+      "default": ""
+    },
+    "fldigi_host": {
+      "type": "string",
+      "title": "fldigi host",
+      "description": "Host where fldigi runs. Leave as 127.0.0.1 unless fldigi is on another computer.",
+      "default": "127.0.0.1"
+    },
+    "fldigi_port": {
+      "type": "number",
+      "title": "fldigi XML-RPC port",
+      "description": "fldigi XML-RPC port. Default 7362.",
+      "default": 7362
+    },
+    "band_guidance": {
+      "type": "boolean",
+      "title": "Band Guidance (experimental)",
+      "description": "Suggest a mode's calling frequency and warn when a frequency is outside the digital band segment. Advisory only.",
+      "default": false
+    },
+    "region": {
+      "type": "string",
+      "title": "IARU Region",
+      "description": "Your IARU region for Band Guidance: 1 (Europe, Africa), 2 (Americas), 3 (Asia-Pacific).",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "2"
+    },
+    "audio_device": {
+      "type": "string",
+      "title": "Audio input for signal hunting",
+      "description": "Name, or part of it, of the input device fldigi listens on. Leave blank for the system default.",
+      "default": ""
+    },
+    "wsjtx_host": {
+      "type": "string",
+      "title": "WSJT-X listen host",
+      "description": "Address on which to receive WSJT-X's UDP messages. Leave as 127.0.0.1 for a local WSJT-X.",
+      "default": "127.0.0.1"
+    },
+    "wsjtx_port": {
+      "type": "number",
+      "title": "WSJT-X UDP port",
+      "description": "WSJT-X Settings, Reporting, UDP Server port. Default 2237. Also enable 'Accept UDP requests' there.",
+      "default": 2237
+    },
+    "wsjtx_multicast": {
+      "type": "string",
+      "title": "WSJT-X multicast group (optional)",
+      "description": "Multicast group to join so JTAlert, GridTracker and others can share WSJT-X. Leave blank for unicast.",
+      "default": ""
+    },
+    "n3fjp_host": {
+      "type": "string",
+      "title": "N3FJP host",
+      "description": "Leave as 127.0.0.1. If N3FJP runs on another computer, run mcp-host-bridge on this one.",
+      "default": "127.0.0.1"
+    },
+    "n3fjp_port": {
+      "type": "number",
+      "title": "N3FJP API port",
+      "description": "N3FJP Settings, Application Program Interface. Default 1100. Not the multi-PC networking port.",
+      "default": 1100
+    },
+    "allow_db_wipe": {
+      "type": "boolean",
+      "title": "Allow whole-log wipe (danger)",
+      "description": "Leave off. When off, the server refuses raw SQL that could delete or overwrite your entire N3FJP log.",
+      "default": false
+    }
+  }
+}
