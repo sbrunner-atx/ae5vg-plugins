@@ -1,0 +1,28 @@
+name: Release
+
+# Zips each Claude plugin folder and attaches the zips to the GitHub release
+# that triggered this run. The ae5vg.com Downloads page reads the asset list
+# from the releases/latest API. In Claude: Customize, Plugins, Add, Upload plugin.
+# Fires when you publish a GitHub Release (e.g. `gh release create v1.0.1`).
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  zips:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # upload release assets
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip the plugins
+        run: |
+          mkdir dist
+          (cd plugins && zip -qr ../dist/amateur-radio-claude-plugin.zip amateur-radio -x '*.DS_Store')
+          (cd plugins && zip -qr ../dist/serial-console-claude-plugin.zip serial-console-mcp -x '*.DS_Store')
+          ls -l dist
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" dist/*.zip --clobber

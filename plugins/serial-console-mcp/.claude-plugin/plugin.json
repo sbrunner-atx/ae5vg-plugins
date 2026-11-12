@@ -1,11 +1,11 @@
 {
   "name": "serial-console-mcp",
   "displayName": "Serial Console",
-  "version": "1.0.0",
-  "description": "By Stefan Brunner, AE5VG. Let Claude work the serial console of the equipment that runs networks and radio stations: Juniper and Cisco routers and switches, Icom CI-V and Kenwood, Yaesu and Elecraft CAT transceivers, GS-232 antenna rotators, and any other serial device in raw, ANSI or VT100 mode.",
+  "version": "1.0.1",
+  "description": "By Stefan Brunner. Let Claude work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.",
   "author": {
-    "name": "Stefan Brunner (AE5VG)",
-    "url": "https://ae5vg.com"
+    "name": "Stefan Brunner",
+    "url": "https://ae5vg.com/products/serial-console-mcp.html"
   },
   "homepage": "https://ae5vg.com/products/serial-console-mcp.html",
   "repository": "https://github.com/sbrunner-atx/ae5vg-plugins",
@@ -26,7 +26,11 @@
     "vt100",
     "iot",
     "stefan-brunner",
-    "ae5vg"
+    "microcontroller",
+    "instruments",
+    "alarm-panel",
+    "embedded",
+    "uart"
   ],
   "icon": "./icon.png",
   "documentationUrl": "https://ae5vg.com/user-guide/serial-console-field-guide.html",

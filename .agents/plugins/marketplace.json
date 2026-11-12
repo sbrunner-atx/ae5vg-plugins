@@ -1,0 +1,32 @@
+{
+  "name": "ae5vg",
+  "interface": {
+    "displayName": "AE5VG"
+  },
+  "plugins": [
+    {
+      "name": "amateur-radio",
+      "source": {
+        "source": "local",
+        "path": "./codex/amateur-radio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "serial-console",
+      "source": {
+        "source": "local",
+        "path": "./codex/serial-console"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

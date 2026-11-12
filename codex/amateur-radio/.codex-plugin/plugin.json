@@ -1,0 +1,30 @@
+{
+  "name": "amateur-radio",
+  "version": "1.0.0",
+  "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
+  "author": {
+    "name": "Stefan Brunner (AE5VG)",
+    "url": "https://ae5vg.com"
+  },
+  "homepage": "https://ae5vg.com/products/",
+  "repository": "https://github.com/sbrunner-atx/ae5vg-plugins",
+  "license": "MIT",
+  "keywords": [
+    "amateur-radio",
+    "ham-radio",
+    "fldigi",
+    "wsjtx",
+    "ft8",
+    "ft4",
+    "psk31",
+    "rtty",
+    "n3fjp",
+    "logging",
+    "contest",
+    "field-day",
+    "stefan-brunner",
+    "ae5vg"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

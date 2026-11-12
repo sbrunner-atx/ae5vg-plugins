@@ -16,7 +16,7 @@
     {
       "name": "serial-console-mcp",
       "source": "./plugins/serial-console-mcp",
-      "description": "Let Claude work any serial console: Juniper and Cisco gear, CAT and CI-V radios, rotators, and other serial devices."
+      "description": "Let Claude work any device through its serial console: Juniper and Cisco gear, IoT gateways, instruments, microcontrollers, radios and rotators."
     }
   ]
 }

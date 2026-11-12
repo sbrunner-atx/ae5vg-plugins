@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "fldigi": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "fldigi-mcp[hunt] @ git+https://github.com/sbrunner-atx/fldigi-mcp@5979db4f94ce1c2c3392e257eed9f07df653dd2d",
+        "fldigi-mcp"
+      ],
+      "transport": "stdio"
+    },
+    "wsjtx": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/sbrunner-atx/wsjtx-mcp@c5d75baafcbd563ce9d80c02482296fea74127a3",
+        "wsjtx-mcp"
+      ],
+      "transport": "stdio"
+    },
+    "n3fjp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/sbrunner-atx/n3fjp-mcp@a41ee91cd2942f28fefe3d0f253679df1ec36ee7",
+        "n3fjp-mcp"
+      ],
+      "transport": "stdio"
+    }
+  }
+}

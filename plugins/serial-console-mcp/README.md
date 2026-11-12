@@ -1,13 +1,14 @@
 # Serial Console
 
-**By Stefan Brunner, AE5VG** · [ae5vg.com](https://ae5vg.com/products/serial-console-mcp.html)
+**By Stefan Brunner** · [Project page](https://ae5vg.com/products/serial-console-mcp.html)
 
-Let Claude work the serial console of the equipment that runs networks and radio stations, through the console port it already has:
+Let Claude work any device through the serial console it already has:
 
 - Juniper (Junos) and Cisco (IOS, IOS-XE and similar) routers and switches
-- Icom CI-V radios, and Kenwood, Yaesu and Elecraft CAT transceivers
+- IoT gateways, alarm and control panels, lab instruments, microcontrollers and embedded boards
+- Radios with a serial control port: Icom CI-V, and Kenwood, Yaesu and Elecraft CAT
 - GS-232 antenna rotators
-- Any other serial device in raw, ANSI or VT100 mode: IoT gateways, alarm and control panels, instruments, microcontrollers
+- Anything else that speaks over RS-232, a USB serial adapter or a UART, in raw, ANSI or VT100 mode
 
 The plugin includes skills for working a Junos console, an IOS console and serial devices in general: reading the mode from the prompt, moving between modes, and leaving the device as it was found.
 

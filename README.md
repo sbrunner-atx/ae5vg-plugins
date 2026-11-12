@@ -5,7 +5,7 @@
 Two Claude plugins:
 
 - [**Amateur Radio**](plugins/amateur-radio): operate a station with fldigi, WSJT-X and N3FJP
-- [**Serial Console**](plugins/serial-console-mcp): work any serial console, from Juniper and Cisco gear to CAT radios and rotators
+- [**Serial Console**](plugins/serial-console-mcp): work any device through its serial console, from Juniper and Cisco gear to IoT gateways, instruments and radios
 
 To add them in Claude Code:
 
@@ -15,6 +15,14 @@ To add them in Claude Code:
 /plugin install serial-console-mcp@ae5vg
 ```
 
-In claude.ai or Cowork, go to Customize, Plugins, Add, Add marketplace, and enter `sbrunner-atx/ae5vg-plugins`.
+In claude.ai or Cowork, go to Customize, Plugins, Add, Add marketplace, and enter `sbrunner-atx/ae5vg-plugins`. Or download a plugin zip from the [latest release](https://github.com/sbrunner-atx/ae5vg-plugins/releases/latest) or [ae5vg.com](https://ae5vg.com/downloads.html#plugins) and choose Upload plugin.
+
+In Codex:
+
+```
+codex plugin marketplace add sbrunner-atx/ae5vg-plugins
+```
+
+Then install from the Plugins Directory in the ChatGPT desktop app. The Codex versions live in `codex/`; see [codex/README.md](codex/README.md).
 
 The skills are copied from the server repositories. `sync-skills.sh` copies them again after a change there.

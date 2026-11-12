@@ -6,4 +6,6 @@ cp -R ../fldigi-mcp/skills/fldigi-operating ../fldigi-mcp/skills/signal-hunting 
 cp -R ../n3fjp-mcp/skills/contest-operating plugins/amateur-radio/skills/
 cp -R ../serial-console-mcp/skills/serial-console ../serial-console-mcp/skills/junos-operating ../serial-console-mcp/skills/ios-operating plugins/serial-console-mcp/skills/
 sed -i "s|see docs/N3FJP-API.md gotchas|see the gotchas in https://github.com/sbrunner-atx/n3fjp-mcp/blob/main/docs/N3FJP-API.md|" plugins/amateur-radio/skills/contest-operating/SKILL.md
+cp -R plugins/amateur-radio/skills/. codex/amateur-radio/skills/
+cp -R plugins/serial-console-mcp/skills/. codex/serial-console/skills/
 echo "Skills copied. Check the diff, raise the plugin version, and commit."
