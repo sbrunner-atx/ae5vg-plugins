@@ -28,10 +28,12 @@ shutil.copytree(root / "codex" / plugin, stage / plugin)
     }],
 }, indent=2) + "\n")
 (stage / "README.txt").write_text(
-    f"{display} plugin for ChatGPT and Codex, by Stefan Brunner (AE5VG).\n\n"
+    f"{display} plugin for ChatGPT, Codex and others, by Stefan Brunner (AE5VG).\n\n"
     f"1. Move this folder somewhere permanent, for example your home folder.\n"
     f"2. In a terminal: codex plugin marketplace add ~/{top}\n"
     f"3. In the ChatGPT desktop app, open Plugins and install {display}.\n\n"
+    f"Other apps that support the open Agent Plugins standard, such as Cursor,\n"
+    f"GitHub Copilot and VS Code, install the {plugin} folder inside this one.\n\n"
     f"Needs uv (https://docs.astral.sh/uv/). More: https://ae5vg.com\n")
 dist = root / "dist"
 dist.mkdir(exist_ok=True)

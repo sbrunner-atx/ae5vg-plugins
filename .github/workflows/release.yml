@@ -1,6 +1,6 @@
 name: Release
 
-# Zips each plugin, for Claude and for ChatGPT and Codex, and attaches the zips to the GitHub release
+# Zips each plugin, for Claude and for ChatGPT, Codex and others, and attaches the zips to the GitHub release
 # that triggered this run. The ae5vg.com Downloads page reads the asset list
 # from the releases/latest API. In Claude: Customize, Plugins, Add, Upload plugin.
 # Fires when you publish a GitHub Release:
@@ -23,6 +23,8 @@ jobs:
           if grep -rIn -i claude codex/amateur-radio codex/serial-console; then
             echo "The ChatGPT plugins must not name Claude."; exit 1
           fi
+      - name: Check the portable Agent Plugins files are current
+        run: python3 scripts/emit_portable.py --check
       - name: Zip the plugins
         run: |
           mkdir dist

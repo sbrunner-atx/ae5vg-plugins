@@ -1,6 +1,6 @@
 {
   "name": "serial-console",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "By Stefan Brunner. Let ChatGPT work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.",
   "author": {
     "name": "Stefan Brunner",

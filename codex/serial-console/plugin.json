@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "serial-console",
+  "version": "1.0.4",
+  "description": "By Stefan Brunner. Let your AI assistant work any device through its serial console: Juniper and Cisco routers and switches, IoT gateways, alarm and control panels, instruments and microcontrollers, and CAT and CI-V radios and antenna rotators, in raw, ANSI or VT100 mode.",
+  "author": {
+    "name": "Stefan Brunner",
+    "url": "https://ae5vg.com/products/serial-console-mcp.html"
+  },
+  "homepage": "https://ae5vg.com/products/serial-console-mcp.html",
+  "repository": "https://github.com/sbrunner-atx/ae5vg-plugins",
+  "license": "MIT",
+  "keywords": [
+    "serial",
+    "console",
+    "rs-232",
+    "juniper",
+    "junos",
+    "cisco",
+    "ios",
+    "network-automation",
+    "telecom",
+    "cat",
+    "ci-v",
+    "rotator",
+    "vt100",
+    "iot",
+    "stefan-brunner",
+    "microcontroller",
+    "instruments",
+    "alarm-panel",
+    "embedded",
+    "uart"
+  ]
+}

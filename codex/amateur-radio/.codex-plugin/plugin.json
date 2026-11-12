@@ -1,6 +1,6 @@
 {
   "name": "amateur-radio",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with ChatGPT: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
   "author": {
     "name": "Stefan Brunner (AE5VG)",

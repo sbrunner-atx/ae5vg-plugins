@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "serial-console": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "serial-console-mcp[screen] @ git+https://github.com/sbrunner-atx/serial-console-mcp@d74321137a4f67bfc49f93bb89a013b74f686b5b",
+        "serial-console-mcp"
+      ]
+    }
+  }
+}
