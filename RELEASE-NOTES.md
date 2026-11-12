@@ -1,4 +1,4 @@
-Each plugin comes in two versions: one for Claude, and one for ChatGPT and Codex. Both versions run the same servers and the same skills.
+Each plugin comes in two versions: one for Claude, and one for ChatGPT and Codex. Install a plugin to install the associated skills automatically. The server downloads include their skill files, but you have to add those yourself.
 
 ## Install in Claude
 
