@@ -21,6 +21,11 @@ jobs:
           mkdir dist
           (cd plugins && zip -qr ../dist/amateur-radio-claude-plugin.zip amateur-radio -x '*.DS_Store')
           (cd plugins && zip -qr ../dist/serial-console-claude-plugin.zip serial-console-mcp -x '*.DS_Store')
+          # The whole marketplace, for Claude Code and for ChatGPT and Codex, which install
+          # only from a marketplace folder. Unzip it, then add the folder as a marketplace.
+          mkdir -p stage/ae5vg-marketplace
+          cp -R .agents .claude-plugin plugins codex README.md LICENSE stage/ae5vg-marketplace/
+          (cd stage && zip -qr ../dist/ae5vg-marketplace.zip ae5vg-marketplace -x '*.DS_Store')
           ls -l dist
       - name: Attach to the release
         env:

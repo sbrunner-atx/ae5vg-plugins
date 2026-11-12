@@ -1,6 +1,6 @@
 {
   "name": "amateur-radio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.",
   "author": {
     "name": "Stefan Brunner (AE5VG)",
@@ -26,5 +26,25 @@
     "ae5vg"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Amateur Radio",
+    "shortDescription": "Operate your ham radio station",
+    "longDescription": "By Stefan Brunner, AE5VG. Operate an amateur radio station with Claude: fldigi for PSK, RTTY and the other digital modes, WSJT-X for FT8, FT4 and the weak-signal modes, and N3FJP for logging contacts and contests such as Field Day. Receive-only until you set your callsign.\n\nThe servers run on your own computer, next to fldigi, WSJT-X and N3FJP, so the plugin needs the ChatGPT desktop app. In ChatGPT no callsign is set, so the station stays receive-only.",
+    "developerName": "Stefan Brunner (AE5VG)",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#14181D",
+    "websiteURL": "https://ae5vg.com/products/",
+    "logo": "./icon.png",
+    "composerIcon": "./icon.png",
+    "defaultPrompt": [
+      "What is on 20 meters right now?",
+      "Find a PSK31 station calling CQ and tune to it",
+      "Show the last ten QSOs in my N3FJP log"
+    ]
+  }
 }
