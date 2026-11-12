@@ -27,7 +27,7 @@ From a download:
 - Add it, for example: `codex plugin marketplace add ~/amateur-radio-chatgpt-plugin`
 - In the ChatGPT desktop app, open Plugins and install the plugin.
 
-The ChatGPT version follows the open Agent Plugins standard, so it also installs in many other AI apps, such as Cursor, GitHub Copilot, VS Code, Kiro and Google Antigravity. In those apps, install the plugin folder inside the download, for example `amateur-radio-chatgpt-plugin/amateur-radio`.
+The ChatGPT version follows the open Agent Plugins standard, so it also installs in many other AI apps, such as Cursor, GitHub Copilot, VS Code, Kiro, Google Antigravity and Grok Bot. In those apps, install the plugin folder inside the download, for example `amateur-radio-chatgpt-plugin/amateur-radio`.
 
 ## Requirements
 
