@@ -2,6 +2,8 @@
 
 **By Stefan Brunner** · [Project page](https://ae5vg.com/products/serial-console-mcp.html)
 
+> **Not working in the Claude desktop app right now.** The app does not start this plugin's server. See the [repository README](../../README.md) for what to install instead.
+
 Let Claude work any device through the serial console it already has:
 
 - Juniper (Junos) and Cisco (IOS, IOS-XE and similar) routers and switches

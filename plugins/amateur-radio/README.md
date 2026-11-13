@@ -2,6 +2,8 @@
 
 **By Stefan Brunner, AE5VG** · [ae5vg.com](https://ae5vg.com)
 
+> **Not working in the Claude desktop app right now.** The app does not start this plugin's server. See the [repository README](../../README.md) for what to install instead.
+
 Operate an amateur radio station with Claude. This plugin connects Claude to the station software you already run:
 
 - **fldigi**, for PSK31, RTTY, Olivia and the other digital modes ([fldigi-mcp](https://ae5vg.com/products/fldigi-mcp.html))

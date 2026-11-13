@@ -8,7 +8,7 @@ Add the marketplace and install from the Plugins Directory in the ChatGPT deskto
 codex plugin marketplace add sbrunner-atx/ae5vg-plugins
 ```
 
-Without GitHub: download `amateur-radio-chatgpt-plugin.zip` or `serial-console-chatgpt-plugin.zip` from the latest release or from https://ae5vg.com/downloads.html#plugins, unzip it into your home folder, and add the folder:
+Without GitHub: download `amateur-radio-chatgpt-plugin.zip` or `serial-console-chatgpt-plugin.zip` from the latest release, unzip it into your home folder, and add the folder:
 
 ```
 codex plugin marketplace add ~/amateur-radio-chatgpt-plugin

@@ -2,6 +2,10 @@
 
 **By Stefan Brunner, AE5VG** · [ae5vg.com](https://ae5vg.com)
 
+> **Not working right now (13 November 2026).** In the Claude desktop app (chat and Cowork), the servers in these plugins do not start. The app skips a plugin server that asks for settings, such as the callsign, and reports `user_config_unsupported`; the plugin's connector pages have no place to enter settings. Both plugins ask for settings, so only their skills load. This is a gap in the Claude app, reported in [anthropics/claude-code](https://github.com/anthropics/claude-code/issues?q=userConfig+desktop) more than once.
+>
+> Until it is fixed, install the desktop extensions and the skill files from **[ae5vg.com/downloads.html](https://ae5vg.com/downloads.html)** instead. Claude Code in a terminal and the Codex versions were not tested with a radio.
+
 Two Claude plugins:
 
 - [**Amateur Radio**](plugins/amateur-radio): operate a station with fldigi, WSJT-X and N3FJP
@@ -15,7 +19,7 @@ To add them in Claude Code:
 /plugin install serial-console-mcp@ae5vg
 ```
 
-In claude.ai or Cowork, go to Customize, Plugins, Add, Add marketplace, and enter `sbrunner-atx/ae5vg-plugins`. Or download a plugin zip from the [latest release](https://github.com/sbrunner-atx/ae5vg-plugins/releases/latest) or [ae5vg.com](https://ae5vg.com/downloads.html#plugins) and choose Upload plugin.
+In claude.ai or Cowork, go to Customize, Plugins, Add, Add marketplace, and enter `sbrunner-atx/ae5vg-plugins`. Or download a plugin zip from the [latest release](https://github.com/sbrunner-atx/ae5vg-plugins/releases/latest) and choose Upload plugin.
 
 In Codex:
 
